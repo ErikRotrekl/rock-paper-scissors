@@ -7,3 +7,9 @@ function getComputerChoice() {
   } else return "scissors";
 }
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+  let humanValue = prompt("Give me rock, paper or scissors.");
+  return humanValue;
+}
+console.log(getHumanChoice());
