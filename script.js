@@ -50,11 +50,11 @@ function playGame() {
       console.log("It's a tie!");
     }
   }
+  for (let round = 1; round <= 5; round++) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
 
-  const humanSelection = getHumanChoice();
-  const computerSelection = getComputerChoice();
-
-  playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+  }
 }
-
 playGame();
