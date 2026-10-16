@@ -10,8 +10,8 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let humanValue = prompt("Give me rock, paper or scissors.");
-  return humanValue;
+  let humanChoice = prompt("Give me rock, paper or scissors.");
+  return humanChoice;
 }
 
 function playGame() {
@@ -56,10 +56,10 @@ function playGame() {
   }
 
   for (let round = 1; round <= 5; round++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
 
-    playRound(humanSelection, computerSelection);
+    playRound(humanChoice, computerChoice);
   }
 
   if (humanScore > computerScore) {
