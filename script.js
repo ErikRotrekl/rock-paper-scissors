@@ -1,3 +1,5 @@
+const numberOfRounds = 5;
+
 function getComputerChoice() {
   let randomInt = Math.floor(Math.random() * 3) + 1;
   if (randomInt === 1) {
@@ -55,7 +57,7 @@ function playGame() {
     }
   }
 
-  for (let round = 1; round <= 5; round++) {
+  for (let round = 1; round <= numberOfRounds; round++) {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
 
